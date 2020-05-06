@@ -1,0 +1,453 @@
+@font-face { font-family: 'Open Sans'; font-style: normal; font-weight: 300; src: url('fonts/open-sans-v16-latin-300.eot'); src: local('Open Sans Light'), local('OpenSans-Light'), url('fonts/open-sans-v16-latin-300.eot?#iefix') format('embedded-opentype'), url('fonts/open-sans-v16-latin-300.woff2') format('woff2'), url('fonts/open-sans-v16-latin-300.woff') format('woff'), url('fonts/open-sans-v16-latin-300.ttf') format('truetype'), url('fonts/open-sans-v16-latin-300.svg#OpenSans') format('svg'); }
+@font-face { font-family: 'Open Sans'; font-style: normal; font-weight: 400; src: url('fonts/open-sans-v16-latin-regular.eot'); src: local('Open Sans Regular'), local('OpenSans-Regular'), url('fonts/open-sans-v16-latin-regular.eot?#iefix') format('embedded-opentype'), url('fonts/open-sans-v16-latin-regular.woff2') format('woff2'), url('fonts/open-sans-v16-latin-regular.woff') format('woff'), url('fonts/open-sans-v16-latin-regular.ttf') format('truetype'), url('fonts/open-sans-v16-latin-regular.svg#OpenSans') format('svg'); }	
+
+h1,h2,h3,h4,h5
+      {
+	  font-family:'Open Sans',sans-serif; 
+	}  
+#contener
+    {
+	position:relative;
+	width: 1386px;
+	/* height:5000px; */
+	margin:0 auto 0 auto;
+	background-color:#fff;
+	font-family:'Open Sans', verdana,sans-serif ;
+	font-size:18px
+	}
+#corp
+{
+	position:relative;
+	width: 100%;
+	margin: Opx;
+	}
+#famille
+    {
+	position:relative;
+	width:500px;
+	background-color:#fff;
+	border-radius:5px;
+	border-bottom: 5px solid  rgba(4,220,180,1);
+	font-size:23px;
+	text-align:center;
+	margin: 70px auto;
+	padding-top:10px;
+ 	
+	}	
+#chanteur
+   {
+	position:relative;
+	width:100%;
+	/*background-color:rgba(2,34,79,0.4); */
+	font-family:verdana;
+	font-size:23px;
+	text-align:left;
+	line-height:35px;
+	overflow:hidden;
+	margin-top:0px;
+	} 
+#chanteur img
+    {
+	float:left;
+	width:50%;
+	margin-right:8%;
+	}
+#chanteur h2 ,#chanteur2 h2
+    {
+	padding-top:5%;
+	}		
+#chanteur2
+   {
+	position:relative;
+	width:100%;
+	/*background-color:rgba(2,34,79,0.4); */
+	font-family:verdana;
+	font-size:23px;
+	text-align:left;
+	line-height:35px;
+	overflow:hidden;
+	margin-bottom:0px;
+	margin-top:0px;
+	} 
+
+#chanteur2 img
+    {
+	float:right;
+	width:50%;
+	margin-left:8%;
+	transition:2s;
+	transform:scale(1);
+	}	
+#chanteur h2,#chanteur p,#chanteur2 h2,#chanteur2 p
+	{
+	margin-left:6%;
+	margin-right:6%;
+    }
+#chanteur h2,#chanteur2 h2
+	{
+	line-height:33px;
+
+    margin-top:5%;
+    }
+	
+	 /* musicien*/
+
+
+@font-face { font-family: 'Open Sans Condensed'; font-style: normal; font-weight: 300; src: url('../fonts/open-sans-condensed-v13-latin-300.eot'); src: local('Open Sans Condensed Light'), local('OpenSansCondensed-Light'), url('../fonts/open-sans-condensed-v13-latin-300.eot?#iefix') format('embedded-opentype'), url('../fonts/open-sans-condensed-v13-latin-300.woff2') format('woff2'), url('../fonts/open-sans-condensed-v13-latin-300.woff') format('woff'), url('../fonts/open-sans-condensed-v13-latin-300.ttf') format('truetype'), url('../fonts/open-sans-condensed-v13-latin-300.svg#OpenSans Condensed') format('svg'); }
+
+
+	 /* leader */
+#leader
+    {
+	position: relative;
+	text-align: center;
+	padding-top:75px;
+	padding-bottom:30px;
+	font-family:sans-serif;
+	}
+#leader article
+    {
+	position:relative;	
+	display:inline-block;
+	
+	width:250px;
+	background-color:rgba(2,2,244,0);
+	box-shadow:-2px 5px 50px rgba(0,0,0,0.2);
+	margin-top:5px;
+	}
+#leader article div{
+	position:absolute;
+	top:0px;
+	width:250px;
+	height:100%;
+	text-align:left;
+	border-radius:7px;
+	background-color:#fff;
+	transition:0.4s;
+	opacity:0;
+	
+}
+#leader article div p{
+	padding:18px;
+}
+#leader article div:hover{
+	opacity:1;
+	box-shadow:-10px 25px 50px rgba(0,0,0,0.2);
+	transform:scale(1.05);
+}		
+#leader article img{
+	transform:scale(0.8);
+	margin-top:15px;
+	opacity:0.9;
+	/* animation:gofle 3s infinite; */
+}	
+#leader article img:hover{
+	transition:transform 1s;
+	opacity:1;
+}
+
+	
+@keyframes pdp-volant{
+	0%{
+		transform:translateY(25px)  ;
+		opacity:0;
+	}
+	10%{
+		transform:translateY(25px)  ;
+		opacity:0.5;
+	}
+	25%{
+		transform:translateY(-25px) ;
+		opacity:1;
+	}
+	35%{
+		transform:translateY(0px);
+	}
+	45%{
+		transform:translateY(-25px);
+	}
+	55%{
+		transform:translateY(0px);
+		}
+	65%{
+		transform:translateY(-25px);
+	}
+	85%{
+		transform:translateY(0px);
+		opacity:1;
+		}
+	
+	100%{
+		transform:translateY(-25px);
+		opacity:0;
+	}
+}
+@keyframes gofle{
+	0%{
+		transform:scale(1);
+		
+	}
+	50%{
+		transform:scale(1.04);
+		
+	}
+	
+	100%{
+		transform:scale(1);
+	}
+}
+
+
+    /*contacte louange*/
+#leader ul
+    {
+		position:relative;
+		display:flex;
+		width:300px;
+		height:100px;
+		margin:80px auto;
+		padding:0;
+		text-align:center;
+	}
+#leader ul li
+    {
+		display:inline-block;
+		list-style:none;
+		width:80px;
+		height:80px;
+		margin:10px;
+		padding:0;
+	    background:rgba(51,51,51,1);
+		line-height:80px;
+		text-align:center;
+		font-size:30px;
+		border-radius:50px;
+		border:2.5px solid rgba(51,51,51,0.9);
+		transition:0.3s ease-in-out;
+	}
+
+#leader ul .num
+    {
+		background:rgba(51,51,51,0);
+		border:none;
+	}
+#leader ul .num:hover
+    {
+		background:rgba(51,51,51,0);
+		
+	}
+#leader ul li:hover
+    {
+		background:rgba(51,51,51,0.8);
+		
+	}
+#leader ul li .fa
+    {
+		color:#fff;
+	}
+    /*contacte*/
+
+/* 
+#contacte
+    {
+	position:relative;
+	width:100%;
+	background-color:rgba(163,43,55); 
+	text-align:center;
+	color:rgba(254,253,253,0.9);
+	font-size:16px;
+	padding-bottom:100px;
+	padding-top:100px;
+	}
+#contacte article
+    {
+	position:relative;
+	display:inline-block;
+	width:32%;
+	padding-top:20px;
+	padding-bottom:20px;
+	} */
+.icone
+    {
+	/* width:75px; */
+	/* height:75px; */
+	/* border-radius:50px; */
+	/* background-color:rgba(254,253,253,1); */
+	margin:0 auto 0 auto;
+	
+	}
+/* #num
+    {
+	border-left:1px solid rgba(254,254,254,0.4);
+	border-right:1px solid rgba(254,254,254,0.4);
+	} 
+	
+	 */
+	
+	
+@media screen and (max-width:1100px){
+		#corp
+			{
+			transform: translateY(-50px);
+			}
+		}
+@media screen and (max-width:900px){
+#corp
+    {
+	transform: translateY(-80px);
+	}
+	#chanteur, #chanteur2                                    /*programe*/
+    {
+	font-size:17px;
+	margin-top:0px;
+	line-height:25px;
+	} 
+	#chanteur h2 ,#chanteur2 h2
+    {
+	padding-top:0%;
+	}	
+    #contacte
+    {
+	font-size:16px;
+	}
+}
+@media screen and (max-width:780px){
+	
+	#contacte article
+    {
+	width:80%;
+	padding-top:20px;
+	padding-bottom:20px;
+	}
+	#num
+    {
+	border-top:1px solid rgba(254,254,254,0.4);
+	border-bottom:1px solid rgba(254,254,254,0.4);
+	border-left:0px solid rgba(254,254,254,0);
+	border-right:0px solid rgba(254,254,254,0);
+	
+	} 
+}	
+@media screen and (max-width:650px){
+	
+	#leader article
+    {
+	box-shadow:-2px 5px 50px rgba(0,0,0,0.2);
+	margin-top:10px;
+	}
+	#famille
+    {
+	width:300px;
+	font-size:18px;
+	margin-top: 70px;
+	margin-bottom: 20px;
+ 	
+	}
+	 #chanteur, #chanteur2                                    
+     { 
+	  width:80%;
+	  margin:0 auto;
+	  padding-bottom:30px;
+	  
+	   
+	 }  
+	
+	#chanteur img, #chanteur2 img                                    
+    {
+	width:100%;
+	margin-bottom:7%;
+	border-radius:5px;
+	
+	} 
+	
+   #musicien div{
+	
+	width:40%;
+	height:40%;
+	} 
+	#contacte article
+    {
+	width:80%;
+	padding-top:30px;
+	padding-bottom:30px;
+	}
+	#leader ul
+    {
+	width:336px;
+	margin-bottom: 0px;
+	}
+    #leader ul li
+    {
+		width:60px;
+		height:60px;
+		line-height:60px;
+		
+		
+	}
+	#footer
+	{
+		margin:0px;
+		}
+}
+@media screen and (max-width:500px){
+	#corp
+    {
+	transform: translateY(-150px);
+	}
+	#leader
+    {
+	
+	padding-bottom:0px;
+	margin-bottom: 0px;
+	}
+}
+@media screen and (max-width:400px){
+#corp
+    {
+	transform: translateY(-110px);
+	}	
+	#leader
+    {
+	padding-top:25px;
+	padding-bottom:0px;
+	}
+	
+	#famille
+    {
+	
+	width:90%;
+	font-size:15px;
+	}
+	#chanteur, #chanteur2                                    /*programe*/
+    {
+	width:100%;
+	font-size:16px;
+	padding-bottom:30px;
+	}
+    #chanteur img, #chanteur2 img                                    /*programe*/
+    {
+	margin-bottom:30px;
+	border-radius:0px;
+	} 	
+	 #musicien 
+	 {
+	background-color:rgba(51,51,51,0.5);
+	}
+	#contacte
+    {
+	padding-bottom:50px;
+	padding-top:50px;
+	}
+	#leader ul
+    {
+	width:200px;
+	}
+    #leader ul li
+    {
+		width:50px;
+		height:50px;
+		line-height:50px;
+		font-size:20px;
+		
+	}
+}				

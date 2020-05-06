@@ -1,0 +1,218 @@
+html,body
+{
+  margin:0;
+  
+   
+   }  
+#contener
+   {
+    position:relative;
+	width: 1386px;
+	 height:2060px;            /* meme que taille de liste */
+	margin:0 auto 0 auto;
+	background-color:rgba(51,51,51,0.08);
+	
+	font-family:verdana;
+	font-size:17px;
+	padding-bottom:50px;
+	overflow:hidden; 
+   }
+header
+   {
+   position:relative;
+   width:70%;
+   margin:0 auto 0 auto;
+   padding-top:20px;
+   padding-bottom:20px;
+   text-align:center;
+   /* background-color:rgba(51,51,51,0); */
+   
+   }  
+#listes
+   {
+   position:relative;
+   width:150px;
+   border-radius:50px;
+   background-color:rgba(107,172,68,0.8);
+   color:rgba(254,254,254,0.9);
+   margin:0px auto;
+   text-align:center;
+   padding:15px;
+   transition:transform 0.2s;
+    box-shadow: 0 8px 15px rgba(0,0,0,.2);
+   }
+#listes:hover
+   {
+   background-color:rgba(107,172,68,1);
+   transform:scale(1.02);
+   }  
+
+
+/* hira */
+   
+#bloc 
+   {
+   position:relative;
+   width:70%;
+   /* height:1150px; */
+   margin:0 auto 0 auto;
+   border-radius:10px;
+   background-color:rgba(254,254,254,0.9);
+   color:rgba(0,0,0,0.9);
+   padding-top:20px;
+   padding-bottom:20px;
+   text-align:center;
+	}
+#titre
+ {
+   position:relative;
+   width:300px;
+   margin:0px auto;
+   text-align:center;
+   border-bottom:4px solid rgba(107,172,68,0.8);
+  } 
+ #parole
+  {
+   margin:20px auto;
+   
+  }  
+#blocliste 
+  {
+   position:absolute;
+   width:400px;
+   
+   top:0px;
+   left:-400px;
+  background-color:rgba(254,254,254,0.98);
+   box-shadow: 0 0px 7px rgba(0,0,0,0.2);
+   
+  } 
+#blocliste div 
+  {
+   position:relative;
+   width:100%;
+   padding-top:20px;
+   padding-bottom:20px;
+   text-align:center;
+   border-bottom:2px solid rgba(51,51,51,0.05);
+   border-right:2px solid rgba(51,51,51,0.05);
+   
+  } 
+ #blocliste div:hover
+  {
+   background-color:rgba(107,172,68,0.8);
+   
+  }
+ #blocliste a
+  {
+   text-decoration:none;
+   color:rgba(0,0,0,0.8);
+   
+  }
+#blocliste a:hover
+  {
+   color:rgba(254,254,254,0.9);
+   font-size:18px;
+  }   
+ #retour
+   {
+    background-color:rgba(107,172,68,0.7);
+	text-align:center;
+	 transition: background-color 0.2s;
+	  box-shadow: 0 4px 7px rgba(0,0,0,.2);
+   }
+ #retour:hover
+   {
+   background-color:rgba(107,172,68,1);
+   color:rgba(254,254,254,0.9);
+   
+   }
+ #retour img
+   {
+  transform:scale(0.6);
+  opacity:0.9;
+   }   
+ #blocliste span
+   {
+  opacity:0.5;
+   }
+ #legende img
+   {
+  
+  opacity:0.9;
+   }  
+ @media screen and (max-width:1386px){
+#contener
+   {
+    width: 100%;
+   }
+  
+ }
+ 
+ @media screen and (max-width:1000px){
+#bloc 
+   {
+   width:100%;
+   }
+   
+   header
+   {
+   width: 100%;
+   }  
+    
+ }
+ @media screen and (max-width:500px){
+#bloc 
+   {
+  font-size:14px;
+	}	 
+	 
+#parole
+  {
+   
+   
+  }  
+    
+ }
+ 
+ @media screen and (max-width:400px){
+	
+  header
+   {
+   
+   padding-top:10px;
+   padding-bottom:10px;
+   }   
+
+#contener
+    {
+     height:1100px;            /* meme que taille de liste */
+	}
+   
+#blocliste 
+  {
+   width:100%;
+  }
+#blocliste div 
+  {
+   
+   padding-top:14px;
+   padding-bottom:14px;
+  }   
+  #listes
+   {
+   
+   width:90px;
+   border-radius:50px;
+   margin-left:20px;
+   text-align:center;
+   padding:15px;
+   }
+   #titre
+   {
+   
+   width:90%;
+   } 
+
+}
+ 

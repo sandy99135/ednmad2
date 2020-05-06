@@ -1,0 +1,291 @@
+@font-face { font-family: 'Open Sans'; font-style: normal; font-weight: 300; src: url('fonts/open-sans-v16-latin-300.eot'); src: local('Open Sans Light'), local('OpenSans-Light'), url('fonts/open-sans-v16-latin-300.eot?#iefix') format('embedded-opentype'), url('fonts/open-sans-v16-latin-300.woff2') format('woff2'), url('fonts/open-sans-v16-latin-300.woff') format('woff'), url('fonts/open-sans-v16-latin-300.ttf') format('truetype'), url('fonts/open-sans-v16-latin-300.svg#OpenSans') format('svg'); }
+@font-face { font-family: 'Open Sans'; font-style: normal; font-weight: 400; src: url('fonts/open-sans-v16-latin-regular.eot'); src: local('Open Sans Regular'), local('OpenSans-Regular'), url('fonts/open-sans-v16-latin-regular.eot?#iefix') format('embedded-opentype'), url('fonts/open-sans-v16-latin-regular.woff2') format('woff2'), url('fonts/open-sans-v16-latin-regular.woff') format('woff'), url('fonts/open-sans-v16-latin-regular.ttf') format('truetype'), url('fonts/open-sans-v16-latin-regular.svg#OpenSans') format('svg'); }	
+
+#contener
+   {
+   background-color:rgba(51,51,51,0.05);
+   font-family:'Open Sans',sans-serif; 
+   overflow: hidden;
+   
+   }
+#logo
+   {
+    z-index: 2;
+   }
+#hamberger
+   {
+   position: absolute;
+   top:40px;
+   right: 40px;
+   opacity: 1;
+   }
+   h3
+   {
+    display: block;
+    margin:0 auto;
+    color:#000;
+    }
+
+
+
+
+
+#contacte 
+   {
+   position:relative;
+   width:100%;
+   text-align:center;
+   width:750px;
+   margin:0 auto 0 auto;
+   border-radius:5px;
+   background-color:rgba(254,254,254,0.9);
+   box-shadow:10px 10px 15px 10px rgba(0,0,0,0.2);
+   padding-top:10px;
+   padding-bottom:20px;
+   transform: translateY(-100px);
+   
+   
+  }
+  #contacte h3
+  {
+   display: block;
+   text-align:center;
+   margin:0 auto;
+   color:rgb(253, 0, 0);
+   }
+#contacte p
+   {
+    display: block;
+    text-align:center;
+    margin:0 auto;
+   
+    }
+#contacte a
+   {
+   text-decoration:none;
+   color:rgb(253, 0, 0);
+   opacity:0.9;
+   animation: clignote 2s infinite ;
+ }
+ #contacte .info
+   {
+   padding-top:50px ;
+   padding-bottom:50px; 
+ }
+ #contacte .fa
+ {
+  transition: 0.2s;
+  color:rgb(51, 51, 51);
+}
+ #contacte .fa:hover
+ {
+  color:rgb(194, 11, 11);
+}
+ 
+ @keyframes clignote{
+	0%{
+		opacity:1;
+	}
+	50%{
+		
+		opacity:0.5;
+	}
+	100%{
+		
+		opacity:1;
+	}
+}	  
+#bloccontacte
+   {
+   text-align:left;
+   position:relative;
+   width:100%;
+   border-radius:10px;
+   margin:0 auto 0 auto;
+   padding-top:20px;
+   padding-bottom:40px;
+   background-color:rgba(254,254,254,0.9);
+   border-bottom:2px solid rgba(2,0,0,0.1);
+   }
+ 
+
+#contacte form div
+   {
+   width:84%;
+   margin: 12px auto 12px auto;
+   }
+
+#contacte form #Nometnum div
+   {
+   display:inline-block;
+   width:49%;
+   margin-left:0.5%;
+   }
+   /* #contacte form  p 
+   {
+     display: block;
+     width:300px;
+     padding-left:0.5%;
+   }   */
+#contacte form #Nometnum div .Nom
+   {
+  
+  
+   }	
+#contacte form #Nometnum div .Numero
+   {
+  
+   }		
+#bloccontacte form div input,#contacte form div textarea
+   {
+   
+    width:100%;
+	height:50px;
+	font-size:17px;
+	font-family:verdana;
+/*	border-radius:7px;*/
+  border: rgba(51,51,51,0);
+  border-bottom:2px solid rgba(51,51,51,0.5);
+  background-color: rgba(51,51,51,0.03);
+	-ms-appearance:none;
+	-webkit-appearance:none;
+	-moz-appearance:none;
+	/* pointer-events:none; */
+	}
+#contacte form .genre input
+   {
+   
+   }	
+#contacte form div input:focus,#contacte form div textarea:focus
+
+   {
+    border-bottom:3px solid rgba(163,43,55,0.5);
+	
+    }	
+    
+#contacte form div textarea
+   {
+   height:200px;
+   }	
+#contacte .envoyer
+   {
+  display: block;
+   width:200px;
+	height:60px;
+	font-size:16px;
+  font-family:'Open Sans',sans-serif; 
+	border-radius:50px;
+	border:2px solid rgb(252, 252, 252);
+  background-color:rgb(253, 0, 0);
+	color:rgb(255, 255, 255);
+	transition:background-color 0.4s;
+	margin:20px auto;
+	
+   }
+  #contacte .envoyer:hover
+   {
+  
+	border:2px solid rgba(107,172,68,1);
+	background-color:rgba(107,172,68,1);
+	color:rgba(254,254,254,1);
+	
+   }
+   
+
+ .jesus
+   {
+   padding-top:30px;
+   padding-bottom:20px;
+   }
+
+  .fond-ito
+    {
+    position: fixed;
+    top:0px;
+    z-index: -1;
+    }
+
+
+ #contacte .char
+    {
+      visibility: hidden;
+      /* font-size:20px; */
+      animation: text 0s steps(2) forwards;
+      animation-delay: calc(0.05s * var(--char-index));
+     }
+    
+    @keyframes text {
+    0%{
+      visibility: hidden;
+    }
+    100%{
+      visibility:visible;
+    }
+    }
+
+
+@media screen and (max-width:1100px){
+   #contener
+   {
+   background-color:rgba(2,0,0,0.1); 
+   }
+  
+}   
+@media screen and (max-width:800px){
+  #logo
+  {
+   
+    box-shadow:-6px 5px 10px rgba(0,0,0,0.5);
+ }
+   #contacte
+   {
+  width:100%;
+  }
+}
+@media screen and (max-width:650px){
+   
+  #contacte form #Nometnum div
+   {
+   
+   width:100%;
+   margin-top:12px;
+   
+   
+   }	
+}
+@media screen and (max-width:500px){
+    #logo
+   {
+     margin-bottom:0px;
+     box-shadow:-6px 5px 10px rgba(0,0,0,0.5);
+  }
+  #hamberger
+   {
+  
+   top:15px;
+   right: 20px;
+  
+   }
+  #contacte 
+  {
+   font-size:17px;
+   border-radius:0px;
+   z-index: 0;
+   transform: translateY(-50px);
+   }
+#contacte .envoyer
+   {
+    width:150px;
+	height:50px;
+	font-size:15px;
+	}  
+
+   #bloccontacte form div input,#contacte form div textarea,#bloccontacte2 form div input
+   {
+   height:50px;
+   
+   font-size:14px;
+	}
+}
+
+

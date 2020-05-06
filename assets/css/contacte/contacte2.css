@@ -1,0 +1,261 @@
+@font-face { font-family: 'Open Sans'; font-style: normal; font-weight: 300; src: url('fonts/open-sans-v16-latin-300.eot'); src: local('Open Sans Light'), local('OpenSans-Light'), url('fonts/open-sans-v16-latin-300.eot?#iefix') format('embedded-opentype'), url('fonts/open-sans-v16-latin-300.woff2') format('woff2'), url('fonts/open-sans-v16-latin-300.woff') format('woff'), url('fonts/open-sans-v16-latin-300.ttf') format('truetype'), url('fonts/open-sans-v16-latin-300.svg#OpenSans') format('svg'); }
+@font-face { font-family: 'Open Sans'; font-style: normal; font-weight: 400; src: url('fonts/open-sans-v16-latin-regular.eot'); src: local('Open Sans Regular'), local('OpenSans-Regular'), url('fonts/open-sans-v16-latin-regular.eot?#iefix') format('embedded-opentype'), url('fonts/open-sans-v16-latin-regular.woff2') format('woff2'), url('fonts/open-sans-v16-latin-regular.woff') format('woff'), url('fonts/open-sans-v16-latin-regular.ttf') format('truetype'), url('fonts/open-sans-v16-latin-regular.svg#OpenSans') format('svg'); }	
+
+#contener
+   {
+   background-color:rgba(51,51,51,0.05);
+   font-family:'Open Sans',sans-serif; 
+   
+   }
+#hamberger
+   {
+   position: absolute;
+   top:40px;
+   right: 40px;
+   opacity: 1;
+   }
+   h3
+   {
+    display: block;
+    margin:0 auto;
+    color:#000;
+    }
+#contacte 
+   {
+   position:relative;
+   width:100%;
+   text-align:center;
+   width:750px;
+   margin:0 auto 0 auto;
+   border-radius:10px;
+   background-color:rgba(254,254,254,0.9);
+   box-shadow:10px 10px 15px 10px rgba(0,0,0,0.2);
+   padding-top:10px;
+   padding-bottom:20px;
+   
+  }
+  #contacte h3
+  {
+   display: block;
+   text-align:center;
+   margin:0 auto;
+   color:rgb(194, 11, 11);
+   }
+#contacte a
+   {
+   text-decoration:none;
+   color:rgba(163,43,55); 
+   opacity:0.9;
+   animation: clignote 2s infinite ;
+ }
+ 
+ @keyframes clignote{
+	0%{
+		opacity:1;
+	}
+	50%{
+		
+		opacity:0.5;
+	}
+	100%{
+		
+		opacity:1;
+	}
+}	  
+#bloccontacte
+   {
+   text-align:left;
+   position:relative;
+   width:100%;
+   border-radius:10px;
+   margin:0 auto 0 auto;
+   padding-top:20px;
+   padding-bottom:40px;
+   background-color:rgba(254,254,254,0.9);
+   border-bottom:2px solid rgba(2,0,0,0.1);
+   }
+ #bloccontacte2
+   {
+   text-align:center;
+   position:relative;
+   width:100%;
+   border-radius:10px;
+   margin:0 auto 0 auto;
+   padding-top:40px;
+   padding-bottom:40px;
+   background-color:rgba(254,254,254,0.9);
+   
+   }  
+   
+
+#contacte form div
+   {
+   width:84%;
+   margin: 12px auto 12px auto;
+   }
+
+#contacte form #Nometnum div
+   {
+   display:inline-block;
+   width:49%;
+   margin-left:0.5%;
+   }
+#contacte form #Nometnum div .Nom
+   {
+  
+  
+   }	
+#contacte form #Nometnum div .Numero
+   {
+  
+   }		
+#bloccontacte form div input,#contacte form div textarea,#bloccontacte2 form div input
+   {
+   
+    width:100%;
+	height:50px;
+	font-size:17px;
+	font-family:verdana;
+/*	border-radius:7px;*/
+  border: rgba(51,51,51,0);
+  border-bottom:2px solid rgba(51,51,51,0.5);
+  background-color: rgba(51,51,51,0.03);
+	-ms-appearance:none;
+	-webkit-appearance:none;
+	-moz-appearance:none;
+	/* pointer-events:none; */
+	}
+#contacte form .genre input
+   {
+   
+   }	
+#contacte form div input:focus,#contacte form div textarea:focus
+
+   {
+    border-bottom:3px solid rgba(163,43,55,0.5);
+	
+    }	
+   
+#contacte form div textarea
+   {
+   height:200px;
+   }	
+#contacte .envoyer
+   {
+  display: block;
+   width:200px;
+	height:60px;
+	font-size:16px;
+  font-family:'Open Sans',sans-serif; 
+	border-radius:50px;
+	border:2px solid rgba(51,51,51, 0.6);
+	
+	color:rgba(8, 0, 0, 0.8);
+	transition:background-color 0.4s;
+	margin:20px auto;
+	
+   }
+  #contacte .envoyer:hover
+   {
+  
+	border:2px solid rgba(107,172,68,1);
+	background-color:rgba(107,172,68,1);
+	color:rgba(254,254,254,1);
+	
+   }
+   
+#bloccontacte2 form  select  
+   {
+    width:150px; 
+	height:30px;
+	border-radius:2px;
+	border:2px solid rgba(51,51,51,0.1);
+	text-align:center;
+   }
+   
+       
+ .jesus
+   {
+   margin-top:30px;
+   }
+
+  .fond-ito
+    {
+    position: fixed;
+    top:0px;
+    z-index: -1;
+    }
+@media screen and (max-width:1100px){
+   #contener
+   {
+   background-color:rgba(2,0,0,0.1); 
+   }
+  
+}   
+@media screen and (max-width:800px){
+  
+   #contacte
+   {
+  width:100%;
+  }
+}
+@media screen and (max-width:650px){
+   
+  #contacte form #Nometnum div
+   {
+   
+   width:100%;
+   margin-top:12px;
+   
+   
+   }	
+}
+@media screen and (max-width:500px){
+    #logo
+   {
+	   margin-bottom:0px;
+  }
+  #hamberger
+   {
+  
+   top:20px;
+   right: 20px;
+  
+   }
+  #contacte 
+  {
+   font-size:17px;
+   border-radius:0px;
+   }
+#contacte .envoyer
+   {
+    width:150px;
+	height:50px;
+	font-size:15px;
+	}  
+
+   #bloccontacte form div input,#contacte form div textarea,#bloccontacte2 form div input
+   {
+   height:50px;
+   
+   font-size:14px;
+	}
+}
+@media screen and (max-width:400px){
+   #bloccontacte form div input,#contacte form div textarea,#bloccontacte2 form div input
+   {
+   width:100%;
+    height:40px;
+   }
+   #contacte 
+  {
+   font-size:15px;
+   
+   }
+  #contacte form div textarea
+   {
+   height:	120px;
+   }	
+}
+
+

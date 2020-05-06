@@ -1,0 +1,440 @@
+@font-face { font-family: 'Open Sans'; font-style: normal; font-weight: 300; src: url('fonts/open-sans-v16-latin-300.eot'); src: local('Open Sans Light'), local('OpenSans-Light'), url('fonts/open-sans-v16-latin-300.eot?#iefix') format('embedded-opentype'), url('fonts/open-sans-v16-latin-300.woff2') format('woff2'), url('fonts/open-sans-v16-latin-300.woff') format('woff'), url('fonts/open-sans-v16-latin-300.ttf') format('truetype'), url('fonts/open-sans-v16-latin-300.svg#OpenSans') format('svg'); }
+@font-face { font-family: 'Open Sans'; font-style: normal; font-weight: 400; src: url('fonts/open-sans-v16-latin-regular.eot'); src: local('Open Sans Regular'), local('OpenSans-Regular'), url('fonts/open-sans-v16-latin-regular.eot?#iefix') format('embedded-opentype'), url('fonts/open-sans-v16-latin-regular.woff2') format('woff2'), url('fonts/open-sans-v16-latin-regular.woff') format('woff'), url('fonts/open-sans-v16-latin-regular.ttf') format('truetype'), url('fonts/open-sans-v16-latin-regular.svg#OpenSans') format('svg'); }	
+#contener
+    {
+	
+	background-color:rgba(240,244,244,1);  
+	font-size:18px;
+	font-family:'Open Sans',sans-serif; 
+	height: auto;
+	}
+h2
+   {
+	font-size:34px;
+	}
+h3
+	{
+	 font-size:25px;
+	 }		
+
+	/* -----------------PROCESS ---------------- */
+#process                                      
+    {
+	position:relative;
+	width:100%;
+	text-align:center;
+	background-color:rgba(240,244,244,1); 
+	padding-top:10px;
+	padding-bottom:50px;
+	}  
+#process  a                                    
+    {
+	text-decoration: none;
+	color: rgba(0, 0, 0, 0.925);
+	transition: 0.5s;
+	} 
+.intro                                    
+    {
+	padding-left:20%;
+	padding-right:20%;
+	} 	
+#processbloc
+    {
+		
+	position: relative;
+	margin:50px auto 50px auto;
+	
+	} 
+#processbloc article
+    {
+	display: inline-block;
+    width:340px;
+	height:470px;
+	background: #fff;
+	text-align: center;
+	
+	margin-left:20px;
+	margin-right:20px;
+	white-space: normal;
+	overflow:hidden;
+	border-radius:10px;
+	transition:transform 0.3s;
+	 box-shadow:-6px 15px 20px rgba(0,0,0,0.2);
+	}
+#processbloc article:hover
+    {
+	transform:scale(1.02);
+	box-shadow:-15px 35px 50px rgba(0,0,0,0.5);
+	}
+#processbloc article h3
+    {
+	transition: 0.5s;
+	margin-bottom: 10px;
+	}
+#processbloc article:hover h3
+    {
+	color:  rgba(240,12,45,1);
+	
+	margin-top: 15px;
+	}
+#processbloc article:hover a
+    {
+	color:  rgba(240,12,45,1);
+	
+	}
+
+#processbloc article img
+    {
+	width:100%;
+	
+	}
+#processbloc article .petitbarre
+    {
+	width:80%;
+	height:4px;
+	}	
+#processbloc article p
+    {
+	text-align: left;
+	line-height:24px;
+	padding-left:30px;
+	padding-right:30px;
+	}
+
+#processbloc article .plus
+	   {
+	
+		}
+	/*-----------------LEDEAR ---------------- */
+
+#leader	
+    {
+	
+	position: relative;
+	width:100%;
+	background-color:#fff;
+	text-align: center;
+	padding-top:50px;
+	padding-bottom:50px;
+	}
+#lesleaders	
+    {
+	position: relative;
+	text-align: center;
+	margin:50px auto 50px auto;
+	
+	}
+#lesleaders	article 
+    {
+	display:inline-block;	
+	position: relative;
+	width:340px;
+	height:470px;
+	overflow:hidden;
+	margin:20px;
+	
+	}
+#lesleaders	article .profilefond 
+    {
+	position: absolute;	
+	bottom:0px;
+	left:0px;
+	
+	}
+#lesleaders	article .profile 
+    {
+	position: absolute;	
+	width:100%;
+	height:100%;
+	top:0px;
+	}
+#lesleaders	article .profile .role
+    {
+   	position: absolute;	
+	width:100%;
+	bottom:20px;
+	}	
+#lesleaders	article .profile .role p
+    {
+   	padding-left:11%;
+	padding-right:9%;
+	text-align: left;
+	}
+#lesleaders	article .profile  img
+    {
+	margin-top:25px;	
+   	 animation:pdp-volant 15s infinite; 
+	}	
+	
+	
+#aidepasteur
+    {
+	position: relative;
+	margin-top:50px;
+	margin-bottom:50px;
+	text-align: center;
+	
+	}
+#aidepasteur h3
+    {
+	
+	margin-bottom:30px;
+	
+	
+	}	
+#aidepasteur article
+    {
+	position:relative;	
+	display:inline-block;
+	width:250px;
+	background-color:rgba(2,2,244,0);
+	box-shadow:2px 0px rgba(0,0,0,0.1);
+	}
+#aidepasteur article div{
+	position:absolute;
+	top:0px;
+	width:250px;
+	height:100%;
+	text-align:left;
+	border-radius:7px;
+	background-color:#fff;
+	transition:0.2s;
+	opacity:0;
+	
+}
+#aidepasteur article div p{
+	padding:18px;
+}
+#aidepasteur article div:hover{
+	opacity:1;
+	box-shadow:-10px 25px 50px rgba(0,0,0,0.2);
+}		
+#aidepasteur article img{
+	transform:scale(0.8);
+	margin-top:10px;
+	opacity:0.9;
+	/* animation:gofle 3s infinite; */
+}	
+#aidepasteur article img:hover{
+	transition:transform 1s;
+	opacity:1;
+}
+
+	
+@keyframes pdp-volant{
+	0%{
+		transform:translateY(25px)  ;
+		opacity:0;
+	}
+	10%{
+		transform:translateY(25px)  ;
+		opacity:0.5;
+	}
+	25%{
+		transform:translateY(-25px) ;
+		opacity:1;
+	}
+	35%{
+		transform:translateY(0px);
+	}
+	45%{
+		transform:translateY(-25px);
+	}
+	55%{
+		transform:translateY(0px);
+		}
+	65%{
+		transform:translateY(-25px);
+	}
+	85%{
+		transform:translateY(0px);
+		opacity:1;
+		}
+	
+	100%{
+		transform:translateY(-25px);
+		opacity:0;
+	}
+}
+@keyframes gofle{
+	0%{
+		transform:scale(1);
+		
+	}
+	50%{
+		transform:scale(1.04);
+		
+	}
+	
+	100%{
+		transform:scale(1);
+	}
+}	
+/*-----------------FONDEMENT ---------------- */	
+#fondement
+        {
+		position:relative;
+		top:0px;
+		width:100%;
+		background:#fff;
+		margin:0px;
+		padding-bottom: 50px;
+		
+		
+		}
+
+#fondementcouverture
+        {
+		width:100%;
+		
+		text-align:center;
+		padding-top:10%;
+		
+		}
+#fondementcouverture img
+        {
+		width:100%;
+		
+		}
+#fondement p
+        {
+		display: block;
+		width: 700px;
+		margin: auto;
+		margin-bottom: 0px;	
+		padding-top:4%;	
+		padding-bottom:4%;
+		
+		font-size:18px;
+	    line-height:28px;
+		}		
+
+
+/*-----------------FONDEMENT ---------------- */	
+
+#histoire
+        {
+		position:relative;
+		top:0px;
+		width:100%;
+		background:#fff;
+		
+		}
+#histoirecouverture
+        {
+		width:100%;
+		text-align:center;
+		
+		}
+#histoirecouverture img
+        {
+		width:100%;
+		}
+#histoire p
+        {
+		padding-top:4%;
+        padding-bottom:4%;		
+		padding-left:12%;
+		padding-right:12%;
+		font-size:18px;
+	    line-height:28px;
+		}
+		
+/*-----------------responsive ---------------- */
+
+
+@media screen and (max-width:1386px){
+    #processbloc article
+    {
+	
+    width:300px;
+	height:470px;
+	margin-top:20px;
+	margin-left:10px;
+	margin-right:10px;
+	border-radius:10px;
+	}
+	
+	
+ }		
+ @media screen and (max-width:1000px){
+    #processbloc article
+    {
+	
+    width:300px;
+	height:490px;
+	margin-top:20px;
+	margin-left:10px;
+	margin-right:10px;
+	border-radius:10px;
+	}
+	
+	.intro                                    
+    {
+	padding-left:10%;
+	padding-right:10%;
+	} 
+	#aidepasteur article
+    {
+	box-shadow:-2px 5px 50px rgba(0,0,0,0.2);
+	margin:5px;
+	}
+
+ }
+
+ @media screen and (max-width:700px){
+	#fondement p
+	{
+	
+	width: 80%;
+	
+	}	
+}
+@media screen and (max-width:500px){
+#process                                      
+    {
+	padding-top:0px;
+	transform: translateY(-50px);
+	}  	
+	h2
+   {
+	font-size:28px;
+	}
+h3
+	{
+	 font-size:22px;
+	 margin-top: 10px;
+	 margin-bottom: 10px;
+	 }	
+#processbloc article:hover h3
+	 {
+		margin-top: 5px;
+		margin-bottom: 5px;
+	 }
+	#processbloc article
+    {
+	
+    width:270px;
+	height:450px;
+	
+	}
+	.intro                                    
+    {
+	padding-left:5%;
+	padding-right:5%;
+	}
+#lesleaders	article 
+    {
+	width:300px;
+	height:440px;
+	margin:0px;
+	font-size:15.5px;
+	}
+	
+	#fondement p
+	{
+	
+	width: 90%;
+	
+	}		
+} 

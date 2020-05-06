@@ -1,0 +1,74 @@
+@font-face { font-family: 'Open Sans'; font-style: normal; font-weight: 300; src: url('fonts/open-sans-v16-latin-300.eot'); src: local('Open Sans Light'), local('OpenSans-Light'), url('fonts/open-sans-v16-latin-300.eot?#iefix') format('embedded-opentype'), url('fonts/open-sans-v16-latin-300.woff2') format('woff2'), url('fonts/open-sans-v16-latin-300.woff') format('woff'), url('fonts/open-sans-v16-latin-300.ttf') format('truetype'), url('fonts/open-sans-v16-latin-300.svg#OpenSans') format('svg'); }
+@font-face { font-family: 'Open Sans'; font-style: normal; font-weight: 400; src: url('fonts/open-sans-v16-latin-regular.eot'); src: local('Open Sans Regular'), local('OpenSans-Regular'), url('fonts/open-sans-v16-latin-regular.eot?#iefix') format('embedded-opentype'), url('fonts/open-sans-v16-latin-regular.woff2') format('woff2'), url('fonts/open-sans-v16-latin-regular.woff') format('woff'), url('fonts/open-sans-v16-latin-regular.ttf') format('truetype'), url('fonts/open-sans-v16-latin-regular.svg#OpenSans') format('svg'); }	
+
+ #loader{
+   position: fixed;
+   display: flex;
+   top:0px;
+   bottom:0px;
+   left:0px;
+   right:0px;
+   justify-content: center;
+   align-items: center;
+    background:rgb(255, 255, 255); 
+   z-index:10;
+}
+#loader span{
+    color:rgb(255, 255, 255);
+    margin: 0 15px;
+    font-size: 80px;
+    font-weight: bold;
+    animation: load 2.4s linear infinite;
+    font-family: 'Open Sans',sans-serif;
+}
+#loader span:nth-child(1)
+{
+   animation-delay: 0s;
+}
+#loader span:nth-child(2)
+{
+   animation-delay: 0.1s;
+}
+#loader span:nth-child(3)
+{
+   animation-delay: 0.2s;
+}
+#loader span:nth-child(4)
+{
+   animation-delay: 0.3s;
+}
+#loader span:nth-child(5)
+{
+   animation-delay: 0.4s;
+}
+#loader span:nth-child(6)
+{
+   animation-delay: 0.5s;
+}
+
+
+@keyframes load{
+
+    0%{
+        text-shadow:  0 0 10px rgba(0,0,0,0);
+        color:rgb(255, 255, 255);
+        transform: scale(1);
+    }
+    40%{
+        text-shadow:  0 10px 20px rgba(0,0,0,0.4);
+        color: rgba(240,12,45,1);
+        transform: scale(1.4);
+    }
+    80%,100%{
+        text-shadow:  0 0 10px rgba(0,0,0,0);
+        color:rgb(255, 255, 255);
+        transform: scale(1);
+    }
+}
+@media screen and (max-width:500px){
+    #loader span{
+        
+        font-size: 40px;
+         
+    }
+}

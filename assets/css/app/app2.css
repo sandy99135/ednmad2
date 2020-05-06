@@ -1,0 +1,90 @@
+html,body
+	{
+	 margin: 0px;
+	 padding:0px;
+    }
+	@font-face { font-family: 'Open Sans'; font-style: normal; font-weight: 300; src: url('fonts/open-sans-v16-latin-300.eot'); src: local('Open Sans Light'), local('OpenSans-Light'), url('fonts/open-sans-v16-latin-300.eot?#iefix') format('embedded-opentype'), url('fonts/open-sans-v16-latin-300.woff2') format('woff2'), url('fonts/open-sans-v16-latin-300.woff') format('woff'), url('fonts/open-sans-v16-latin-300.ttf') format('truetype'), url('fonts/open-sans-v16-latin-300.svg#OpenSans') format('svg'); }
+	@font-face { font-family: 'Open Sans'; font-style: normal; font-weight: 400; src: url('fonts/open-sans-v16-latin-regular.eot'); src: local('Open Sans Regular'), local('OpenSans-Regular'), url('fonts/open-sans-v16-latin-regular.eot?#iefix') format('embedded-opentype'), url('fonts/open-sans-v16-latin-regular.woff2') format('woff2'), url('fonts/open-sans-v16-latin-regular.woff') format('woff'), url('fonts/open-sans-v16-latin-regular.ttf') format('truetype'), url('fonts/open-sans-v16-latin-regular.svg#OpenSans') format('svg'); }	
+#contenaire
+	{
+    position: relative;
+    width: 400px;
+    height: auto;
+    margin: 0 auto;
+    /* background: linear-gradient(180deg,#ce003d,#2e4bc6); */
+    background: linear-gradient(180deg,#ce003e96,#9b2ec6c9);
+    /* background-size: 400% 400%; */
+    
+    font-family:'Open Sans',sans-serif; 
+    padding-top:50px;
+    padding-bottom: 50px;
+    animation: backgroud 12s ease infinite;
+    overflow: hidden;
+    }
+@keyframes 
+  { 
+    0%{
+    background-position:47% 0%;
+    }
+    50%{
+        background-position:54% 100%;
+        }
+    100%{
+            background-position:47% 0%;
+            }
+    
+   }
+#contenaire div
+	{
+    position: relative;
+    width: 80%;
+    /* border-bottom:2px solid rgba(73, 67, 67, 0.9); */
+    border-radius: 50px;
+    border:2px solid rgba(255, 255, 255, 0.5);
+    font-size: 18px;
+    text-align: center;
+    margin: 5px auto;
+    background: rgba(0, 0, 0, 0.075);
+    padding-top:15px;
+    padding-bottom: 15px;
+    transition: 0.1s;
+   
+    }
+    #contenaire div:hover
+	{
+        border:2px solid rgba(255, 255, 255, 1);
+        background: rgb(255, 254, 254);
+        color: rgb(0, 0, 0);
+   
+    }
+    #contenaire div:hover a
+	{
+        
+        color: rgb(0, 0, 0);
+   
+    }
+#contenaire div a
+	{
+    text-decoration: none;
+    color:rgba(255, 255, 255, 1);
+   transition: 0.2s;
+   
+    }
+    #contenaire .fond
+	{
+    position: absolute;
+    top:0px;
+    width: 100%;
+    z-index: -1;
+   
+   
+    }
+
+    @media screen and (max-width:400px){
+
+
+        #contenaire
+	{
+    width: 100%;
+    }
+    }

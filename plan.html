@@ -1,0 +1,55 @@
+<!DOCTYPE HTML>
+
+<html>
+   <head>
+		<title>Plan</title>
+		
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="shortcut icon" sizes="57x57" href="images/icone2.png" type="image/png">
+		<link rel="stylesheet" href="assets/css/font-awesome.min.css" />
+		<link rel="stylesheet" href="assets/css/plan.css" />
+		<link rel="stylesheet" href="assets/css/loading.css" />
+		
+		
+	</head>
+	
+	  <body onload="myFunction()">
+	  
+			<div id="contentMap"> 
+					<iframe src="https://www.google.com/maps/d/u/0/embed?mid=1Nk4QF0CVk2gLJXx8mng_2jXjHP_oiC03"  width="100%" height="100%" frameborder="0" style="border:0" allowfullscreen></iframe>
+				        
+			</div>
+			<img src="images/legende.jpg" alt="" class="leg1">  
+			<div class="leg3"> 
+				<img src="images/leg2.jpg" alt="" class="leg"> 
+				<img src="images/leg3.jpg" alt="" class="leg"> 
+				
+			</div>
+			<img src="images/leg4.jpg" alt="" class="leg4"> 
+				
+			<div class="retour"><a href="index.html"><i class="fa " ><span>retour</span> </i> </a></div>
+			
+			
+
+
+			<div id="loader">
+				  <span>J</span>
+				  <span>E</span>
+				  <span>S</span>
+				  <span>U</span>
+				  <span>S</span>
+				  <span>.</span>
+			</div>
+			<script type="text/javascript">
+			   var Star;
+			   function myFunction(){
+                 Star = setTimeout(showpage,2500);
+			   }
+			   function showpage(){
+				   document.getElementById("loader").style.display= "none";
+			   }
+			</script>	
+	
+	 </body>
+</html>

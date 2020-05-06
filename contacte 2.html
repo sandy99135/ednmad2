@@ -1,0 +1,134 @@
+<!DOCTYPE HTML>
+
+<html>
+   <head>
+		<title>contacte2</title>
+		
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		
+		<link rel="stylesheet" href="assets/css/font-awesome.min.css" />
+		<link rel="stylesheet" href="assets/css/header.css" />
+		<link rel="stylesheet" href="assets/css/contacte/contacte2.css" />
+		<!-- <link rel="stylesheet" href="assets/css/footer.css" /> -->
+		
+		<!-- responsive -->
+		<link rel="stylesheet" href="assets/css/responsive.css" />
+		
+		
+	</head>
+	
+	  <body>
+	  
+	      <!-- <div id="arrierePlan"> <img src="images/fond2.jpg" alt="click" /> -->
+		  <!-- </div> -->
+          <div id="contener">
+		  
+			   <!-- Banner -->
+			   <!-- <div id="bannerTete" > <img src="images/fond.jpg" alt="" /> <!-- IMAGE fond --> 
+			   <!-- </div> -->
+					
+			   <!-- Header -->
+			   <header id="header" class="alt">
+		            <!-- Menu -->
+				    <div id="menu">
+					    <ul class="links">
+								<li><a href="index.html">ACCUEIL</a></li>
+								<li><a href="apropos.html">APROPOS</a></li>
+								<li><a href="toriteny.html">MESSAGE</a></li>
+								<li><a href="louange.html">LOUANGE</a></li>
+                                <li><a href="evenement.html"><span>EVENEMENT</span></a></li>
+							    <li><a href="Video.html">VIDEO</a></li>
+						     	<li><a href="give.html">DONNER</a></li>								
+						 </ul>
+	                  </div>
+					  
+					  <div id="bouton" > <a href="contacte.html"><img src="images/contacte.jpg"  /></a> <!-- contacte --> </div>
+					  <div id="socio1">
+						<a href="https://www.facebook.com/EglisedesnationsAmbohimirary/"> <i class="fa fa-facebook-square" style="font-size:20pt;margin:15px;"></i></a>
+						<a href="https://www.eglisedesnationsambohimirary@gmail.com"><i class="fa fa-envelope-o" style="font-size:20pt" ></i></a>
+						   <i class="fa fa-youtube" style="font-size:17pt;margin:15px;color:rgba(254,254,254,0.8);"></i> 
+					 </div>
+					   
+					  
+					  
+				</header>
+				<!-- Header pour menus responsive -->
+			   <div id="hamberger" ><img src="images/hamberger.png " class="hamberger" /> </div><!-- hamberger -->
+			   <div id="header2" class="alt">
+		            <!-- Menu -->
+				    <div id="menu2">
+							<div class = "top" ><i class="fa fa-caret-up retour"  style="font-size:17pt;margin:15px;color:rgba(254,254,254,0.8);"></i></div><!-- retour -->
+							<div><a href="index.html"><span>ACCUEIL</span></a></div>
+							<div><a href="apropos.html">APROPOS</a></div>
+							<div><a href="toriteny.html">MESSAGE</a></div>
+							<div><a href="louange.html">LOUANGE</a></div>
+                            <div><a href="evenement.html">EVENEMENT</a></div>
+							<div><a href="Video.html">VIDEO</a></div>		
+                            <div><a href="give.html">DONNER</a></div>		
+                            <div class = "colorer" ><a href="contacte.html">CONTACT</a></div>							
+						 
+	                  </div>
+				</div>
+				
+				<div id="logo" > <img src="images/logo.jpg" alt="click" /> </div><!-- logo -->
+				<!-- <div id="espacement" > </div><!-- prendre espace --> 
+				
+				<!-- toriteny -->
+				
+				
+				 <!-- footer --> 					
+				<div id="contacte">
+				     <p>2G 23R bis Ambohimirary<br/>ednambomirary@gmail.com<br/>0348675606<br/><a href="#bloccontacte2">Demander priere</a></p>
+				     <div id="bloccontacte" >
+					      <h3>Evoyer nous votre message</h3>
+						  <form  method="post"action="http://localhost:8050/message" >
+                            <div id="Nometnum">
+							  <div id="Nom">
+                                <label for="Nom"></label> <input type="text"  id="pseudo"placeholder="Nom"size="30"maxlength="30" class="Nom nom" name="nom" required="true"/>
+                              </div>
+                          
+						       <div id="Prenom">
+                                <label for="Prenom"></label> <input type="text"  id="pseudo"placeholder="Prenom"size="30"maxlength="30" class="Prenom prenom" name="prenom"/ required="true">
+                              </div>
+							</div>
+							
+							<div id="Numero">
+                                <label for="Numero"></label> <input type="tel"  id="pseudo" name="numero"placeholder="Numero"size="30"maxlength="30" class="Numero numero" required="true"/>
+                              </div>
+							
+                            <div>
+                              <label for="Email"></label> <input type="text"  name="email" id="pseudo"placeholder="Email"size="30"maxlength="30" class="Email email" 
+                              />
+                            </div>
+                          
+						    <div>
+                              <label for="Sujet"></label> <input type="text"  id="pseudo"placeholder="Sujet"size="30"maxlength="30" class="Sujet sujet"
+                              name="sujet"/>
+                            </div>
+							
+							<div>
+							<label for="precisions"></label>
+                            <textarea id="precisions"cols="40"rows="4" placeholder="Entrer le message ou demande de priere" class="Message message" name="message" required="true"></textarea>
+						    </div>
+							<!-- <button id="ENVOI"></button> -->
+							<input type="submit"value="Envoyer Message" class="envoyer" id="ENVOI" />	
+                          </form>
+						  					  
+					  </div>
+					  
+				     
+				      <h3 class="jesus">Jesus vous aime tellement</h3>
+				</div>
+					
+			     <!--pour menu hemberger -->	
+	            <script src="assets/js/amberger.js"> </script>
+				<script src="assets/js/scroll.js"> </script>
+				<script src="contacte.js"> </script>
+				<script src="axios/dist/axios.js"> </script>
+	    
+		</div>
+				
+	
+	</body>
+</html>
